@@ -52,8 +52,14 @@ console.log('is number greater than zero', isPositive(-9))
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+  if (array.length === 0){
+    return undefined
+  }
+  else {return array[array.length-1];
 }
+}
+console.log('return undefined if array is empty', getLast([]));
+console.log('last number in the array is', getLast([5,6,7,8]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
